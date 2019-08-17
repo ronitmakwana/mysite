@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+<html>
+<body>
+
+{% block content %}
+<h1>HOME</h1>
+
+    <a href="{% url 'patient:formView' %}">registration form for patinet</a>
+    {% endblock  %}
+</body>
+</html>

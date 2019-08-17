@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% if user.is_authenticated %}
+            {% if user.is_superuser %}you are logged in as a admin {% else %}you are loggedinn as a simple user {% endif %}
+         your joining date and time
+        <b>{{ user.date_joined }}</b><br>
+        last time login at
+       <b> {{ user.last_login }}</b>    
+        {% endif %}
+       

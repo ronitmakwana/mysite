@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+<html>
+    <body>
+        <form action="">
+            {% csrf_token %}
+            mail: <input type="email" name="" id=""><br>
+            password <input type="password" name="" id=""><br>
+            <button type="submit">submit</button>
+        </form>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
